@@ -44,7 +44,12 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="32" height="22" class="mobile-menu-icon">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -63,6 +68,62 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-container">
+          <button type="button" class="mobile-close-btn js-close-menu">
+            <svg width="8" height="8" class="mobile-close-icon">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="mobile-list list">
+            <li class="mobile-list-item">Studio</li>
+            <li class="mobile-list-item">Portfolio</li>
+            <li class="mobile-list-item">Contacts</li>
+          </ul>
+          <ul class="mobile-contact-list list">
+            <li class="mobile-tel-item">
+              <a href="tel:+110001111111" class="mobile-link-tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-mail-item">
+              <a href="mailto:info@devstudio.com" class="mobile-link-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-list-footer list">
+            <li class="social-list-item">
+              <a href="" class="social-links links-footer">
+                <svg width="24" height="24" class="footer-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-links links-footer">
+                <svg width="24" height="24" class="footer-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-links links-footer">
+                <svg width="24" height="24" class="footer-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-links links-footer">
+                <svg width="24" height="24" class="footer-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -475,7 +536,7 @@
         </form>
       </div>
     </footer>
-
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -538,5 +599,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
