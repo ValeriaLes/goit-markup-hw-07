@@ -1122,9 +1122,14 @@ img {
 }
 .mobile-container {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
+  width: 100vw;
+  height: 100vh;
 }
 .mobile-close-btn {
   position: absolute;
