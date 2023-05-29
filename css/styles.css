@@ -344,8 +344,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 54px;
-  padding-right: 54px;
+  /* padding-left: 54px;
+  padding-right: 54px; */
 }
 .hero-title {
   margin-top: 0;
@@ -647,6 +647,16 @@ img {
   justify-content: center;
   row-gap: 72px;
 }
+@media screen and (min-width: 768px) {
+  .footer-position {
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-position {
+    align-items: baseline;
+  }
+}
 .footer-descr-logo {
   width: 268px;
   /* text-align: center; */
@@ -855,7 +865,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 392px;
+  width: 95%;
   padding: 72px 16px 24px 16px;
   min-height: 584px;
 
